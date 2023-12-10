@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AR Super Smash Bros Ultimate Stats Page" />
+    <meta name="author" content="Benjamin Weisenfelder" />
+    <meta name="stats" content="noindex" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dhurjati&family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header role="banner" class="primary">
+       <h1><a href="index.html">ARSTATS</a></h1>
+      <h2>All Things AR Smash Bros!</h2>
+      <nav role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="content" class="container">
+          <h2>FAQ</h2>
+          <div class="faq">
+            <button class="accordion">
+              When and Where are tournaments?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel" style="display: none;">
+              <p>
+                There are few tournaments that happen regularly. There's Smash @ Bears on Wednesdays, the UARK eSports club hosts tournaments on Thursdays, the UALR eSports club hosts tournaments on Fridays, the UAFS eSports club hosts tournaments on Saturdays, and there's another tournament called Tech or Die that happens on Sundays. You can find out more by contacting us!
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq">
+            <button class="accordion">
+              How do tournaments work?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Typically, tournaments comprise of best of 3 matches until there are only 8 competitors left. Matches that happen in this Top 8 are all best of 5. Brackets are also usually double elimination, meaning you have to lose 2 matches before you are eliminated from the tournament.
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq">
+            <button class="accordion">
+              Do I have to pay to enter?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Some tournaments are pay to enter, others are free to enter. Typically this is outline when you register for the tournament. Payout for the tournament is also usually outlined when you register, but typically it's top 3 payout.
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq">
+            <button class="accordion">
+              Where can I sign up?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Most tournaments have a page on start.gg where you can pre-register for an upcoming tournament. Tournament Organizers will typically post the link to the tournament's respective registration page in some kind of announcment. You can find out more by contacting us!
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq">
+            <button class="accordion">
+              How can I be a part of the scene?
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Just come to tournaments! If you participate and play, we consider you a part of the scene!
+              </p>
+            </div>
+          </div>
+    </section>
+    <aside role="complementary">
+      <div class="container">
+        <article class="widget">
+          <header>
+            <h2>Background</h2>
+          </header>
+          <p>The Arkansas Smash Bros. Ultimate Scene has been around since the game came out back in 2018, and has gone through multiple generations of players, with many people making a name for themselves in the scene.</p>
+          <p>
+            Since the pandemic, the scene has slowly been on the decline, but hopefully the scene will be able to bring some new blood in that is willing to make this scene become great again.
+          </p>
+          <footer>Widget Footer</footer>
+        </article>
+        <article class="widget overview">
+          <header>
+            <h2>Overview</h2>
+          </header>
+          <table>
+            <tbody>
+              <tr>
+                <td>ACTIVE PLAYERS</td>
+                <td>CentAR -  33<span>/ NWA - 67</span></td>
+              </tr>
+              <tr>
+                <td>CURRENT SEASON</td>
+                <td>Oct. 1st <span>- Dec. 31st</span></td>
+              </tr>
+              <tr>
+                <td>CURRENT CENTRAL #1</td>
+                <td>CentAR - Terminus </td>
+              </tr>
+              <tr>
+                <td>CURRENT NWA #1</td>
+                <td>NWA - LumaDooma</td>
+              </tr>
+            </tbody>
+          </table>
+          <footer>Widget Footer</footer>
+        </article>
+      </div>
+    </aside>
+    <footer id="colophon" role="contentinfo"> <h6>&copy; 2023 ARSTATS | <a href="mailto:bweisenfelder@gmail.com"> Report Feedback</a></h6></footer>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+  </body>
+  </html>
